@@ -1,6 +1,7 @@
-let app2 = new Vue({
-  el: '#app-2',
+// seenがtrueなら、index.htmlで文字が表示される。falseなら表示されない。
+let app3 = new Vue({
+  el: '#app-3',
   data: {
-    message: 'You load this page on' + new Date().toLocaleString() // app2.messageでmessageの値にアクセスできる。
+    seen: false
   }
 })
