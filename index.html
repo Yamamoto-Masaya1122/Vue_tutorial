@@ -6,12 +6,9 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="app-4">
-    <ol>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-      </li>
-    </ol>
+  <div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script>
