@@ -1,7 +1,10 @@
-// seenがtrueなら、index.htmlで文字が表示される。falseなら表示されない。
-let app3 = new Vue({
-  el: '#app-3',
+let app4 = new Vue({
+  el: '#app-4',
   data: {
-    seen: false
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' },
+    ]
   }
 })
