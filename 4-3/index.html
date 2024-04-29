@@ -18,12 +18,11 @@
     >-1</button>
     <p>{{ count }}</p>
     <p 
-      v-if="isPass"
+      v-if="count >= 80"
       class="passed"
-    >合格！</p>
-    <p
-      v-else
-    >不合格</p>
+    >ランクA</p>
+    <p v-else-if="count >= 60">ランクB</p>
+    <p v-else>ランクC</p>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script>
